@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -14,3 +15,7 @@ The React Compiler is not enabled on this template because of its impact on dev 
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+=======
+# Redux_ShoppingCart
+ShoppingCart is a frontend web application built using React and Redux Toolkit. In this project, users can view a list of products, add products to the cart, and manage cart items easily. Users can increase or decrease product quantity, remove items from the cart, and see the total price update in real time.
+>>>>>>> 8e3ec93ab909523efde355cd7088ecef7010c89c
