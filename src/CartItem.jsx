@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { updateQuantity, removeCart, clearAllItems } from "./redux/CartSlice";
+import { updateQuantity, removeItem, clearAllItems } from "./redux/CartSlice";
 import { useNavigate } from "react-router-dom";
 import "./App.css";
 
@@ -79,7 +79,7 @@ const CartList = () => {
 
                 <button
                   className="remove-item"
-                  onClick={() => dispatch(removeCart(item.id))}
+                  onClick={() => dispatch(removeItem(item.id))}
                 >
                   ✕
                 </button>

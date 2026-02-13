@@ -1,109 +1,229 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:ital,wght@1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:ital,wght@1,400&display=swap");
 
 .hero-container {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
-                url('https://cdn.pixabay.com/photo/2017/07/13/08/59/greenhouse-2499758_1280.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 2rem;
-    color: #ffffff;
-    font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://cdn.pixabay.com/photo/2017/07/13/08/59/greenhouse-2499758_1280.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 2rem;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
 }
 
 .content-wrapper {
-    display: flex;
-    max-width: 1200px;
-    width: 100%;
-    align-items: center;
-    gap: 60px;
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  align-items: center;
+  gap: 60px;
 }
 
 /* Left Section Styling */
 .hero-left {
-    flex: 1;
-    text-align: center;
+  flex: 1;
+  text-align: center;
 }
 
 .hero-left h1 {
-    font-size: 4.5rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-    line-height: 1.1;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  font-size: 4.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  line-height: 1.1;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .divider {
-    height: 2px;
-    width: 60px;
-    background-color: #4caf50;
-    margin: 20px auto;
+  height: 2px;
+  width: 60px;
+  background-color: #4caf50;
+  margin: 20px auto;
 }
 
 .tagline {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.8rem;
-    margin-bottom: 2.5rem;
-    opacity: 0.9;
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  margin-bottom: 2.5rem;
+  opacity: 0.9;
 }
 
 .btn-get-started {
-    background-color: #2e7d32; /* Darker, richer green */
-    color: white;
-    border: none;
-    padding: 16px 45px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  background-color: #2e7d32; /* Darker, richer green */
+  color: white;
+  border: none;
+  padding: 16px 45px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .btn-get-started:hover {
-    background-color: #388e3c;
-    transform: translateY(-2px);
+  background-color: #388e3c;
+  transform: translateY(-2px);
 }
 
 /* Right Section - Enhanced Glassmorphism */
 .hero-right {
-    flex: 1.2;
-    background: rgba(255, 255, 255, 0.07); /* Very subtle white tint */
-    backdrop-filter: blur(15px) saturate(150%);
-    -webkit-backdrop-filter: blur(15px) saturate(150%);
-    padding: 50px;
-    border-radius: 24px;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  flex: 1.2;
+  background: rgba(255, 255, 255, 0.07); /* Very subtle white tint */
+  backdrop-filter: blur(15px) saturate(150%);
+  -webkit-backdrop-filter: blur(15px) saturate(150%);
+  padding: 50px;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
 .hero-right h2 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 30px;
-    text-align: center;
-    line-height: 1.4;
-    color: #e0e0e0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-align: center;
+  line-height: 1.4;
+  color: #e0e0e0;
 }
 
 .description-text p {
-    line-height: 1.8;
-    margin-bottom: 25px;
-    font-size: 1.05rem;
-    color: #f0f0f0;
-    font-weight: 400;
-    text-align: justify;
+  line-height: 1.8;
+  margin-bottom: 25px;
+  font-size: 1.05rem;
+  color: #f0f0f0;
+  font-weight: 400;
+  text-align: justify;
 }
 
 /* Responsive adjustments */
 @media (max-width: 1024px) {
-    .content-wrapper {
-        flex-direction: column;
-        text-align: center;
-    }
-    .hero-left h1 { font-size: 3.5rem; }
-    .hero-right { padding: 30px; }
+  .content-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-left h1 {
+    font-size: 3.5rem;
+  }
+  .hero-right {
+    padding: 30px;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:ital,wght@1,400&display=swap");
+
+.hero-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://cdn.pixabay.com/photo/2017/07/13/08/59/greenhouse-2499758_1280.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 2rem;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.content-wrapper {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  align-items: center;
+  gap: 60px;
+}
+
+/* Left Section Styling */
+.hero-left {
+  flex: 1;
+  text-align: center;
+}
+
+.hero-left h1 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  line-height: 1.1;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.divider {
+  height: 2px;
+  width: 60px;
+  background-color: #4caf50;
+  margin: 20px auto;
+}
+
+.tagline {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  margin-bottom: 2.5rem;
+  opacity: 0.9;
+}
+
+.btn-get-started {
+  background-color: #2e7d32; /* Darker, richer green */
+  color: white;
+  border: none;
+  padding: 16px 45px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-get-started:hover {
+  background-color: #388e3c;
+  transform: translateY(-2px);
+}
+
+/* Right Section - Enhanced Glassmorphism */
+.hero-right {
+  flex: 1.2;
+  background: rgba(255, 255, 255, 0.07); /* Very subtle white tint */
+  backdrop-filter: blur(15px) saturate(150%);
+  -webkit-backdrop-filter: blur(15px) saturate(150%);
+  padding: 50px;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.hero-right h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-align: center;
+  line-height: 1.4;
+  color: #e0e0e0;
+}
+
+.description-text p {
+  line-height: 1.8;
+  margin-bottom: 25px;
+  font-size: 1.05rem;
+  color: #f0f0f0;
+  font-weight: 400;
+  text-align: justify;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .content-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-left h1 {
+    font-size: 3.5rem;
+  }
+  .hero-right {
+    padding: 30px;
+  }
 }

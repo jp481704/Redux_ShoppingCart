@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "./App.css";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchProducts } from "./redux/productSlice";
-import { addItem, removeCart } from "./redux/CartSlice";
+import { addItem, removeItem } from "./redux/CartSlice";
 import Header from "./Header";
 
 const Product = () => {
@@ -49,7 +49,7 @@ const Product = () => {
                 <span className="price">${product.price}</span>
                 {cartSelector.find((item) => item.id === product.id) ? (
                   <button
-                    onClick={() => dispatch(removeCart(product))}
+                    onClick={() => dispatch(removeItem(product))}
                     className="remove-from-cart"
                   >
                     Remove from Cart
