@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { updateQuantity, removeCart, clearAllItems } from "./redux/slice";
+import { updateQuantity, removeCart, clearAllItems } from "./redux/CartSlice";
 import { useNavigate } from "react-router-dom";
 import "./App.css";
 
@@ -23,7 +23,7 @@ const CartList = () => {
 
   const totalAmount = cartItems.reduce(
     (acc, item) => acc + item.price * (item.quantity || 1),
-    0
+    0,
   );
 
   return (
@@ -61,9 +61,7 @@ const CartList = () => {
                     type="number"
                     value={item.quantity || 1}
                     min="1"
-                    onChange={(e) =>
-                      manageQuantity(item.id, e.target.value)
-                    }
+                    onChange={(e) => manageQuantity(item.id, e.target.value)}
                   />
 
                   <button
@@ -93,10 +91,7 @@ const CartList = () => {
             <h3>Total Amount</h3>
             <h2>₹ {totalAmount}</h2>
 
-            <button
-              className="place-order-btn"
-              onClick={handlePlaceOrder}
-            >
+            <button className="place-order-btn" onClick={handlePlaceOrder}>
               Place Order
             </button>
           </div>

@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "./App.css";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchProducts } from "./redux/productSlice";
-import { addItem, removeCart } from "./redux/slice";
+import { addItem, removeCart } from "./redux/CartSlice";
 import Header from "./Header";
 
 const Product = () => {
